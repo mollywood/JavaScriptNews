@@ -1,0 +1,38 @@
+body {
+  background-color: #7F7378;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+h4 {
+
+}
+
+/** Navigation **/
+.navigation {
+  background-color: #332E30;
+}
+nav.main-nav .nav-item {
+  transition: background-color 2s ease;
+}
+nav.main-nav .nav-item:hover {
+  background-color: #40393C;
+  border-radius: 10px;
+}
+nav.main-nav .nav-link {
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+/**News Articles**/
+#newsDiv img {
+  width: 30%;
+}
+
+#newsDiv a {
+  class: btn;
+}

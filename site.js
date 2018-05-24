@@ -6,15 +6,15 @@ addEventListener('load', function(){
 function populateNews(news) {
   newsDiv.innerHTML = ''
   let newsToDisplay = news['articles']
-  for(let index = 0; index < newsToDisplay; index++) {
+  newsToDisplay.forEach(function(news) {
 
-    let newsItem = `${newsToDisplay[index].title}</h4>
-    <h5>${newsToDisplay[index].author}</h5>
-    <p>${newsToDisplay[index].description}</p>
-    <a href='${newsToDisplay[index].url}'>Read More</a>
-    <img src='${newsToDisplay[index].urlToImage}' />
-    <h6>${newsToDisplay[index].publishedAt}</h6>`
+    let newsItem = `<h4>${news.title}</h4>
+    <h5>${news.author}</h5>
+    <p>${news.description}</p>
+    <a href='${news.url}'>Read More</a>
+    <img src='${news.urlToImage}' />
+    <h6>${news.publishedAt}</h6>`
 
     newsDiv.innerHTML += newsItem
-  }
+  })
 }
