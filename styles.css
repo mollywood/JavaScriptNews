@@ -17,10 +17,13 @@ nav.main-nav .nav-item {
 nav.main-nav .nav-item:hover {
   background-color: #40393C;
   border-radius: 10px;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 nav.main-nav .nav-link {
   font-size: 1.4rem;
-  color: #fff;
+  color: #BFACB4;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -30,9 +33,19 @@ nav.main-nav .nav-link {
 }
 
 #newsDiv img {
-  width: 30%;
+  width: 40%;
+  border: 6px solid #332E30;
+  -webkit-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  transition: transform .3s ease;
+}
+
+#newsDiv img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #newsDiv a {
-  
+  align-self: flex-start;
 }
