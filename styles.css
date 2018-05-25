@@ -7,10 +7,6 @@ h2 {
   font-family: 'Archivo Black', sans-serif;
 }
 
-h4 {
-
-}
-
 /** Navigation **/
 .navigation {
   background-color: #332E30;
@@ -29,10 +25,14 @@ nav.main-nav .nav-link {
 }
 
 /**News Articles**/
+#newsDiv {
+  background-color: #BFACB4;
+}
+
 #newsDiv img {
   width: 30%;
 }
 
 #newsDiv a {
-  class: btn;
+  
 }
